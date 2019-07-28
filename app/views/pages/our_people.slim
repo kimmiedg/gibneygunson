@@ -1,0 +1,99 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large About Us
+                h1 Our People
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item.current-menu-ancestor
+                = link_to "Our Story", our_story_path
+              li.menu-item
+                = link_to "Our People", our_people_path
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.lead-text-medium.text-primary-color Employees of Our Trusted Law Firm in Albury
+            .small-bar.colored-bar
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    .stripe.stripe-fullwidth.remove-top
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-sm-12.columns
+            p.lead-text-medium.text-primary-color.text-center.margin-bottom-20px Our People
+            .small-bar.text-center.colored-bar
+            .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
+              .row
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-gunson.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  John Gunson
+                      .sub
+                        | Partner
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-gibney.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  Paul Gibney
+                      .sub
+                        | Partner
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-tanner.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  Sue Tanner
+                      .sub
+                        | Gunson's Assistant
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="#"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="team-view-gunson.html" title=("view profile")  Rebecca Glover
+                      .sub
+                        | Gibney's Assistant
+            /! end
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    = render 'layouts/partials/branches_contact_info'
