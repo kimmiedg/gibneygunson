@@ -37,7 +37,7 @@ body {
 @media (min-width: 768px) {
 	.contact-info.columns {
 		float: right;
-		background-image: url(./images/sidebar-bg.png); /* sidebar background at page's right side */
+		background-image: url(sidebar-bg.png); /* sidebar background at page's right side */
 		background-repeat: repeat-y;
 	}
 }
@@ -57,7 +57,7 @@ body {
 		z-index: 2;
 	}
 	#sidebar.page-right-col.columns {
-		background-image: url(./images/sidebar-bg.png); /* sidebar background at page's right side */
+		background-image: url(sidebar-bg.png); /* sidebar background at page's right side */
 		background-repeat: repeat-y;
 	}
 }
@@ -6006,7 +6006,7 @@ table.standard-table .footer.no-links td {
 	display: inline-block;
 	width: 16px;
 	height: 11px;
-	background: url(../images/icons/ajax-loader.gif) no-repeat 0 0;
+	background: url(/assets/icons/ajax-loader.gif) no-repeat 0 0;
 	margin-left: 30px;
 }
 #page-content .contact-form div.error > input,

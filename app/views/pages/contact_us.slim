@@ -1,0 +1,135 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                h1 Contact Us
+  /! end Hero Image &amp; Page Title
+  #page-content.sidebar-layout
+    .container
+      /! Container
+      /! Content with right-aligned Sidebar
+      .row.columns-wrapper.sb-right
+        /! Contact Info
+        aside.col-sm-6.col-md-5.columns.contact-info
+          /! Tabs: address details
+          .tabs.address-details
+            nav.tabs-nav
+              /! for multiple offices
+              ul.tabs-list
+                li.active data-map="map_1"
+                  a href="#tab-pane-1"  Lavington
+                li data-map="map_2"
+                  a href="#tab-pane-2"  Wodonga
+                li data-map="map_3"
+                  a href="#tab-pane-3"  Melbourne
+              /! for single office: remove tabs navigation (.tabs-list)
+            .tabs-content
+              /! Tab Pane 1
+              #tab-pane-1.tab-pane
+                .contact-location.clearfix
+                  i.fa.fa-map-marker
+                  h6.title Office Location
+                p.margin-bottom-10px
+                  | 2/346 Griffith Road,
+                  br/
+                  | Lavington, NSW 2641
+                p
+                  em Monday-Friday: 9:00am – 5:00pm
+                .contact-envelope.clearfix
+                  i.fa.fa-envelope
+                  h6.title Mailing Address
+                p
+                  | PO Box 594, Lavington, NSW 2641
+                  br/
+                  | DX: 5835 Albury
+                .contact-envelope.clearfix
+                  i.fa.fa-phone
+                  h6.title Phone
+                p (02) 6049 6666
+                .contact-envelope.clearfix
+                  i.fa.fa-fax
+                  h6.title Fax
+                p (02) 6040 1840
+              /! Tab Pane 2
+              #tab-pane-2.tab-pane
+                .contact-location.clearfix
+                  i.fa.fa-map-marker
+                  h6.title Office Location
+                p.margin-bottom-10px
+                  | 18 Jarrah Street,
+                  br/
+                  | Wodonga, VIC 3690
+                p
+                  em Monday-Friday: 9:00am – 5:00pm
+                .contact-envelope.clearfix
+                  i.fa.fa-envelope
+                  h6.title Mailing Address
+                p
+                  | DX: 5835 Albury
+                .contact-envelope.clearfix
+                  i.fa.fa-phone
+                  h6.title Phone
+                p (02) 6049 6666
+              /! Tab Pane 3
+              #tab-pane-3.tab-pane
+                .contact-location.clearfix
+                  i.fa.fa-map-marker
+                  h6.title Office Location
+                p.margin-bottom-10px
+                  | 74/299 Queen Street,
+                  br/
+                  | Melbourne, VIC 3000
+                p
+                  em Monday-Friday: 9:00am – 5:00pm
+                .contact-envelope.clearfix
+                  i.fa.fa-envelope
+                  h6.title Mailing Address
+                p DX: 5835 Albury
+          /! end Tabs
+        /! end Contact Info
+        /! Page Left Column
+        #main-content.col-sm-6.col-md-7.columns.page-left-col
+          /! inner grid
+          .row
+            .col-sm-12.columns
+              p.lead-text-medium.text-primary-color.margin-bottom-40px Contact us for legal advice, we'll respond as soon as possible
+              /! Contact Form
+              form#contact-form.contact-form.contact-form-main action="" method="post"
+                .field-author
+                  label for="author"
+                    | Name
+                    span.required *
+                  input required="" type="text" value=""
+                .field-email
+                  label for="email"
+                    | Email
+                    span.required *
+                  input required="" type="email" value=""
+                .field-phone
+                  label for="phone"  Phone number
+                  input type="text" value=""
+                .field-subject
+                  label for="author"
+                    | Subject
+                    span.required *
+                  input placeholder="e.g: legal advice, need documents, etc." required="" type="text" value=""
+                .field-message
+                  label for="message"
+                    | Message
+                    span.required *
+                  textarea required="" rows="4"
+                .field-submit
+                  input#submit.button name="submit" type="submit" value="Send"
+                  span.loader.hidden-xs-up
+              #contact-form-message.info
+                p
+              /! end Contact Form
+        /! end Page Left Column
+      /! end columns-wrapper sb-right
+    /! end Container
+  /! end Page Content
