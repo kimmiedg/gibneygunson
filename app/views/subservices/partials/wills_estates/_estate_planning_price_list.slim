@@ -1,0 +1,227 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Estate Planning Price List
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item
+                = link_to "Claims & Litigation", subservice_path(1)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+              li.menu-item
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+              li.menu-item
+                = link_to "Business Law", subservice_path(8)
+              li.menu-item.menu-item-has-children.current-menu-ancestor
+                = link_to "Wills & Estates", subservice_path(14)
+                ul.sub-menu
+                  li.menu-item.current-menu-item
+                    = link_to "Estate Planning Price List", subservice_path(14)
+                  li.menu-item
+                    = link_to "Wills, Financial Powers of Attorney, and Medical Powers of Attorney", subservice_path(15)
+                  li.menu-item
+                    = link_to "Your Will & Superannuation", subservice_path(16)
+                  li.menu-item
+                    = link_to "Planning For Your Digital Assets", subservice_path(17)
+                  li.menu-item
+                    = link_to "Deceased Estates Administration", subservice_path(18)
+                  li.menu-item
+                    = link_to "Family Provision Claims – New South Wales", subservice_path(19)
+                  li.menu-item
+                    = link_to "Family Provision Claims – Victoria", subservice_path(20)
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.margin-bottom-40px
+              | This price list applies to standard documents.
+              br
+              | Complicated wills are charged at different rates. See note* below.
+              br=
+              | Payment is requested as time of signing the documents.
+              br
+              br
+            p.lead-text-medium.text-primary-color Prices for Standard Documents
+            .small-bar.colored-bar
+            h5.margin-bottom-20px
+              strong Wills
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person – Will
+                  td.text-center width="40%"
+                    | $210.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – Two Wills
+                  td.text-center width="40%"
+                    | $380.00
+                    br
+                    span.text-small.text-grey plus GST
+            h5.margin-bottom-20px
+              strong Financial Powers of Attorney
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person – Financial Attorney
+                  td.text-center width="40%"
+                    | $130.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – Two Financial Attorneys
+                  td.text-center width="40%"
+                    | $230.00
+                    br
+                    span.text-small.text-grey plus GST
+            h5.margin-bottom-20px
+              strong Appointments of Enduring Guardians / Medical Powers of Attorney
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person – Enduring Guardian / Medical Attorney
+                  td.text-center width="40%"
+                    | $185.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – Two Enduring Guardians / Medical Attorneys
+                  td.text-center width="40%"
+                    | $340.00
+                    br
+                    span.text-small.text-grey plus GST
+            h5.margin-bottom-20px
+              strong Bundle (Will, Financial Power of Attorney, Medical Power of Attorney)
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person
+                  td.text-center width="40%"
+                    | $420.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple
+                  td.text-center width="40%"
+                    | $580.00
+                    br
+                    span.text-small.text-grey plus GST
+            .gap.margin-bottom-60px
+            p.lead-text-medium.text-primary-color Pensioners (Centrelink/DVA) – Prices for Standard Documents
+            .small-bar.colored-bar
+            p.margin-bottom-20px
+              | Card must be produced at signing to qualify for pensioner rates.
+            h5.margin-bottom-20px
+              strong Wills
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person – Will
+                  td.text-center width="40%"
+                    | $85.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – Two Wills
+                  td.text-center width="40%"
+                    | $150.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – One pensioner, one non-pensioner
+                  td.text-center width="40%"
+                    | $270.00
+                    br
+                    span.text-small.text-grey plus GST
+            h5.margin-bottom-20px
+              strong Financial Powers of Attorney
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person – Financial Attorney
+                  td.text-center width="40%"
+                    | $65.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – Two Financial Attorneys
+                  td.text-center width="40%"
+                    | $110.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – One pensioner, one non-pensioner
+                  td.text-center width="40%"
+                    | $170.00
+                    br
+                    span.text-small.text-grey plus GST
+            h5.margin-bottom-20px
+              strong Appointments of Enduring Guardians / Medical Powers of Attorney
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person – Enduring Guardian / Medical Attorney
+                  td.text-center width="40%"
+                    | $65.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – Two Enduring Guardians / Medical Attorneys
+                  td.text-center width="40%"
+                    | $130.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – One pensioner, one non-pensioner
+                  td.text-center width="40%"
+                    | $240.00
+                    br
+                    span.text-small.text-grey plus GST
+            h5.margin-bottom-20px
+              strong Bundle (Will, Financial Power of Attorney, Medical Power of Attorney)
+            .standard-table-wrapper.margin-bottom-50px
+              table.standard-table
+                tr
+                  th.text-center One Person
+                  td.text-center width="40%"
+                    | $160.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple
+                  td.text-center width="40%"
+                    | $270.00
+                    br
+                    span.text-small.text-grey plus GST
+                tr
+                  th.text-center Couple – One pensioner, one non-pensioner
+                  td.text-center width="40%"
+                    | $430.00
+                    br
+                    span.text-small.text-grey plus GST
+            p.margin-bottom-40px
+              strong
+                | *NOTE: Complicated wills
+              | &nbsp;include: wills by which life interests are created; wills by which a person is disinherited; wills by which testamentary trusts are created; wills containing special provisions for a disabled person;
+              | blended family wills (children from previous marriages).
+            a.button.button-medium.button-colored.download-icon href="/assets/GG-Estate-Planning-Price-List.pdf"  Download as PDF
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    = render 'layouts/partials/branches_contact_info'

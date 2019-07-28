@@ -1,0 +1,109 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Property Development
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item
+                = link_to "Claims & Litigation", subservice_path(1)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+              li.menu-item.menu-item-has-children.current-menu-ancestor
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Our Conveyancing Team", subservice_path(3)
+                  li.menu-item
+                    = link_to "Conveyancing Quote - New South Wales", subservice_path(4)
+                  li.menu-item
+                    = link_to "Conveyancing Quote - Victoria", subservice_path(5)
+                  li.menu-item
+                    = link_to "Leases", subservice_path(6)
+                  li.menu-item.current-menu-item
+                    = link_to "Property Development", subservice_path(7)
+              li.menu-item
+                = link_to "Business Law", subservice_path(8)
+              li.menu-item
+                = link_to "Wills & Estates", subservice_path(14)
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.margin-bottom-40px
+              | Paul Gibney is a Property Law and Business Law Accredited Specialist, and has acted for many property developers and private clients in relation to subdivisions and developments.
+              br
+            h5.margin-bottom-20px
+              strong Paul can assist with:
+            ul.check-list.indent-medium.margin-bottom-40px
+              li Vendor and purchaser transfers
+              li Joint venture negotiations and agreements
+              li Liaising with councils, government departments, and banks
+              li Liaising with accountants on structuring and advising on land tax, stamp duty, and capital gains tax
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    .stripe.stripe-fullwidth.remove-top
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-sm-12.columns
+            p.lead-text-medium.text-primary-color.text-center.margin-bottom-50px Contact a member of our conveyancing team to discuss any of the above matters
+            .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
+              .row
+                .col-md-offset-3.col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-gibney.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="profile-gibney.html" title=("view profile")  Paul Gibney
+                      .sub
+                        | Solicitor
+                        br
+                        a href="mailto:pgibney@gibneygunson.com.au"  pgibney@gibneygunson.com.au
+                        br
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="team-view-tanner.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  Rebecca Glover
+                      .sub
+                        | Assistant
+                        br
+                        a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                        br
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+            /! end
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    = render 'layouts/partials/branches_contact_info'

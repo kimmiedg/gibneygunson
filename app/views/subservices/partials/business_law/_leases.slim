@@ -1,0 +1,180 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Leases
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item
+                = link_to "Claims & Litigation", subservice_path(1)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+              li.menu-item
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+              li.menu-item.menu-item-has-children.current-menu-ancestor
+                = link_to "Business Law", subservice_path(8)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Sales and Purchases of Businesses", subservice_path(8)
+                  li.menu-item.current-menu-item
+                    = link_to "Leases", subservice_path(9)
+                  li.menu-item
+                    = link_to "Business Law, including Business Disputes", subservice_path(10)
+                  li.menu-item
+                    = link_to "Liquor Licensing", subservice_path(11)
+                  li.menu-item
+                    = link_to "Farm Sales and Purchases", subservice_path(12)
+              li.menu-item
+                = link_to "Property Development", subservice_path(13)
+              li.menu-item
+                = link_to "Wills & Estates", subservice_path(14)
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.margin-bottom-40px
+              | Entering into a lease is a significant financial commitment for any business.
+              br
+              br
+              | Paul Gibney has over 30 years’ experience in leasing, including acting for landlords in drawing retail, hotel, commercial, and farming leases; advising tenants about leases (including acting for retail shop tenants against shopping centres
+              | in retail lease disputes); and acting for landlords and tenants in lease terminations.
+              br
+            h5.margin-bottom-20px
+              strong Paul can help you with:
+            ul.check-list.indent-medium.margin-bottom-40px
+              li Drafting and reviewing retail, hotel, commercial, and farming leases
+              li Complying with legislative requirements, particularly for retail leases and hotel leases
+              li Negotiating lease terms for both landlords and tenants
+              li Assignment of leases, including those associated with sales of business
+            .gap.margin-bottom-60px
+            p.lead-text-medium.text-primary-color Quotations for Leasing
+            .small-bar.colored-bar
+            h5.margin-bottom-20px
+              strong Landlords
+            p.margin-bottom-20px
+              | If you are a landlord looking to lease out premises, we can provide you with quotations on the following basis:
+            .standard-table-wrapper.margin-bottom-30px
+              table.standard-table
+                tr
+                  th.text-center If the lease is for 3 years or more, requires registration, and is a standard Retail Leases Act lease
+                  td.text-center
+                    | $950.00
+                    br
+                    span.text-small.text-grey
+                      | plus GST plus disbursements
+                      br
+                      | for preparation of the lease, negotiations of up to 2 hours, and finalisation and registration of the lease.
+                tr
+                  th.text-center If the lease is a commercial or hotel lease
+                  td.text-center
+                    | $1,500.00
+                    br
+                    span.text-small.text-grey
+                      | plus GST plus disbursements
+                      br
+                      | for the preparation of the lease, negotiations of up to 2 hours, and finalisation and registration of the lease
+            p.margin-bottom-20px
+              | Negotiations in excess of those set out in our fixed fee quotation above will be charged at a rate of&nbsp;
+              strong $350.00 per hour plus GST
+            p.margin-bottom-60px
+              | We reserve the right to revise our quotation once we have reviewed the heads of agreement or agent’s instructions.
+            h5.margin-bottom-20px
+              strong Tenants
+            p.margin-bottom-20px
+              | If you are a tenant leasing premises, it is more difficult to provide a fixed fee quotation as the time taken to review the lease will depend on the terms of the lease and the amount of negotiation required.
+              br
+              br
+              | We can provide you with the following estimates:
+              br
+            .standard-table-wrapper.margin-bottom-30px
+              table.standard-table
+                tr
+                  th.text-center If the lease is a Retail Leases Act lease,
+                  td.text-center
+                    | $750.00
+                    br
+                    span.text-small.text-grey
+                      | plus GST
+                      br
+                      | for the review, advice, and recommendation of amendments, including negotiations of up to 2 hours with the landlord’s solicitor.
+                tr
+                  th.text-center If the lease is a commercial or hotel lease, has customised clauses, and is not a standard form lease
+                  td.text-center
+                    | $1,400.00
+                    br
+                    span.text-small.text-grey
+                      | plus GST
+                      br
+                      | for review, advice, and recommendation of amendments, including negotiations of up to 4 hours with the landlord’s solicitor.
+            p.margin-bottom-20px
+              | Negotiations in excess of those indicated above will be charged at a rate of&nbsp;
+              strong $350.00 per hour plus GST
+            p.margin-bottom-20px
+              | We reserve the right to revise our quotation once we have reviewed the heads of agreement or agent’s instructions.
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    .stripe.stripe-fullwidth.remove-top
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-sm-12.columns
+            p.lead-text-medium.text-primary-color.text-center.margin-bottom-50px Contact a member of our conveyancing team to discuss any of the above matters
+            .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
+              .row
+                .col-md-offset-3.col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-gibney.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="profile-gibney.html" title=("view profile")  Paul Gibney
+                      .sub
+                        | Solicitor
+                        br
+                        a href="mailto:pgibney@gibneygunson.com.au"  pgibney@gibneygunson.com.au
+                        br
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="#"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  Rebecca Glover
+                      .sub
+                        | Assistant
+                        br
+                        a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                        br
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+            /! end
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    = render 'layouts/partials/branches_contact_info'

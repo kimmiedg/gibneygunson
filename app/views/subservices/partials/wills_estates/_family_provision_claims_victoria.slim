@@ -1,0 +1,177 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Family Provision Claims – Victoria
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item
+                = link_to "Claims & Litigation", subservice_path(1)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+              li.menu-item
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+              li.menu-item
+                = link_to "Business Law", subservice_path(8)
+              li.menu-item.menu-item-has-children.current-menu-ancestor
+                = link_to "Wills & Estates", subservice_path(14)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Estate Planning Price List", subservice_path(14)
+                  li.menu-item
+                    = link_to "Wills, Financial Powers of Attorney, and Medical Powers of Attorney", subservice_path(15)
+                  li.menu-item
+                    = link_to "Your Will & Superannuation", subservice_path(16)
+                  li.menu-item
+                    = link_to "Planning For Your Digital Assets", subservice_path(17)
+                  li.menu-item
+                    = link_to "Deceased Estates Administration", subservice_path(18)
+                  li.menu-item
+                    = link_to "Family Provision Claims – New South Wales", subservice_path(19)
+                  li.menu-item.current-menu-item
+                    = link_to "Family Provision Claims – Victoria", subservice_path(20)
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.margin-bottom-60px
+              | Claims can be made for further provision from estates if relatives or loved ones believe that insufficient provision has been made for them.
+              br/
+              br/
+              | To make a successful family provision claim in Victoria under that state’s
+              a href="http://austlii.edu.au/au/legis/vic/consol_act/aapa1958259/" target="_blank"
+                strong Administration and Probate Act
+              | a person must have had
+              | either a blood or a close relationship with the deceased person and have received inadequate or no provision from the estate.
+            p.lead-text-medium.text-primary-color Time Limits and Courts
+            .small-bar.colored-bar
+            ul.margin-bottom-60px
+              li Claims must be brought within 6 months of obtaining the grant of probate (where the deceased person left a will) or letters of administration (where no will had been left).
+              li The court may give an extension of time so long as the estate has not been completely administered.
+              li An application can be made in either the County Court or the Supreme Court of Victoria, but cannot be brought in the Magistrates Court or in VCAT.
+            p.lead-text-medium.text-primary-color Obligations of the Willmaker
+            .small-bar.colored-bar
+            p.margin-bottom-60px
+              | The willmaker must make provision for any person for whom he or she had a responsibility to provide for. De facto spouses and same-sex partners (now collectively called “domestic partners”) may claim if insufficient provision has been made.
+              | “Domestic partnership” includes relationships such as siblings who live together for a long time in a mutually supportive relationship.
+            p.lead-text-medium.text-primary-color Will a Claim for Further Provision Succeed?
+            .small-bar.colored-bar
+            p.margin-bottom-60px
+              | The court applies the test – did the deceased person have a moral responsibility, and fail to observe their legal obligation to make adequate provision for the claimant? The claimant must have an economic need for support. The court will
+              | likely view claims by close family members more favourably than claims by less close family members.
+            p.lead-text-medium.text-primary-color Principles Used by the Court When Considering Claims
+            .small-bar.colored-bar
+            h5.margin-bottom-20px
+              strong Principles include:
+            ul.margin-bottom-40px
+              li The net value of the estate, that is, its size after debts, funeral, testamentary, and other liabilities have been deducted. If the estate is not big enough to be capable of redistribution, the action cannot succeed
+              li The age, sex, and health of the applicant
+              li If the applicant received any gift, transfer, or other provision made by the deceased during their life
+              li How close the relationship was between the applicant and the deceased person
+              li The financial resources of the applicant. An applicant will be entitled to provision only if an economic need for provision can be shown.
+              li The character and conduct of the applicant
+            p
+              | The court has power to refuse applications if applicants’ conduct towards the willmaker was unsatisfactory.
+    /! end Container
+  /! end Stripe section
+  /! Stripe section
+  .stripe.stripe-fullwidth.remove-top
+    .stripe-upper-bg
+    .container
+      /! Container
+      .row
+        .col-sm-12.columns
+          p.lead-text-medium.text-primary-color.text-center.margin-bottom-50px Contact us if you wish to discuss any of the above matters
+          .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
+            .row
+              .col-sm-6.col-md-3.columns
+                article
+                  .box-image.overlay-enabled
+                    img alt=("team member") src="/assets/team-placeholder.jpg" /
+                    .image-overlay
+                      a href="profile-gunson.html"
+                        span.label view profile
+                  .box-text
+                    h5.title.text-black
+                      a href="profile-gunson.html" title=("view profile")  John Gunson
+                    .sub
+                      | Solicitor
+                      br/
+                      a href="mailto:jgunson@gibneygunson.com.au"  jgunson@gibneygunson.com.au
+                      br/
+                      a href="tel:0260496666"
+                        i.ion.ion-fw.ion-android-call
+                        | (02) 6049 6666
+              .col-sm-6.col-md-3.columns
+                article
+                  .box-image.overlay-enabled
+                    img alt=("team member") src="/assets/team-placeholder.jpg" /
+                    .image-overlay
+                      a href="#"
+                        span.label view profile
+                  .box-text
+                    h5.title.text-black
+                      a href="#" title=("view profile")  Sue Tanner
+                    .sub
+                      | Gunson's Assistant
+                      br/
+                      a href="mailto:stanner@gibneygunson.com.au"  stanner@gibneygunson.com.au
+                      br/
+                      a href="tel:0260496666"
+                        i.ion.ion-fw.ion-android-call
+                        | (02) 6049 6666
+              .col-sm-6.col-md-3.columns
+                article
+                  .box-image.overlay-enabled
+                    img alt=("team member") src="/assets/team-placeholder.jpg" /
+                    .image-overlay
+                      a href="profile-gibney.html"
+                        span.label view profile
+                  .box-text
+                    h5.title.text-black
+                      a href="profile-gibney.html" title=("view profile")  Paul Gibney
+                    .sub
+                      | Solicitor
+                      br/
+                      a href="mailto:pgibney@gibneygunson.com.au"  pgibney@gibneygunson.com.au
+                      br/
+                      a href="tel:0260496666"
+                        i.ion.ion-fw.ion-android-call
+                        | (02) 6049 6666
+              .col-sm-6.col-md-3.columns
+                article
+                  .box-image.overlay-enabled
+                    img alt=("team member") src="/assets/team-placeholder.jpg" /
+                    .image-overlay
+                      a href="#"
+                        span.label view profile
+                  .box-text
+                    h5.title.text-black
+                      a href="#" title=("view profile")  Rebecca Glover
+                    .sub
+                      | Gibney's Assistant
+                      br/
+                      a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                      br/
+                      a href="tel:0260496666"
+                        i.ion.ion-fw.ion-android-call
+                        | (02) 6049 6666
+          /! end
+    /! end Container
+  /! end Stripe section
+  /! Stripe section
+  = render 'layouts/partials/branches_contact_info'

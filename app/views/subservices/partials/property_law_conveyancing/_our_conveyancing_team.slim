@@ -1,0 +1,100 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Our Conveyancing Team
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item
+                = link_to "Claims & Litigation", subservice_path(1)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+              li.menu-item.menu-item-has-children.current-menu-ancestor
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Our Conveyancing Team", subservice_path(3)
+                  li.menu-item.current-menu-item
+                    = link_to "Conveyancing Quote - New South Wales", subservice_path(4)
+                  li.menu-item
+                    = link_to "Conveyancing Quote - Victoria", subservice_path(5)
+                  li.menu-item
+                    = link_to "Leases", subservice_path(6)
+                  li.menu-item
+                    = link_to "Property Development", subservice_path(7)
+              li.menu-item
+                = link_to "Business Law", subservice_path(8)
+              li.menu-item
+                = link_to "Wills & Estates", subservice_path(14)
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.lead-text-medium.text-primary-color Buying and selling a property is one of the most important transactions a person will undertake.
+            .small-bar.colored-bar
+            p.margin-bottom-20px
+              | Our experienced team at Gibney & Gunson is headed by the only Property Law Accredited Specialist in Albury/Wodonga.
+              br
+              br
+            img src="/assets/acc_specialist.png" /
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    .stripe.stripe-transparent-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-sm-12.columns
+            .staff.picture-boxes.left-picture-box.medium-col-space
+              article.clearfix
+                .box-image
+                  img alt="team" src="/assets/team-placeholder.jpg" /
+                .box-text
+                  h3.title
+                    | Paul Gibney,
+                    span.text-medium.text-grey Solicitor
+                  .contact-details
+                    a href="mailto:pgibney@gibneygunson.com.au"  pgibney@gibneygunson.com.au
+                    br
+                    a href="tel:0260496666"  (02) 6049 6666
+                  .profile-description
+                    p
+                      | Paul has over 30 years’ experience as a solicitor, and is an&nbsp;
+                      a href="https://www.lawsociety.com.au/for-the-public/going-court-and-working-with-lawyers/specialist-accreditation-scheme" target="_blank"
+                        strong Accredited Specialist
+                      | &nbsp;in both property law and business law. He acts for individuals, businesses, and developers, and consults to lawyers and accountants. He is a co-author of the first New South Wales edition of 1001 Conveyancing Answers, which is a manual
+                      | widely used by solicitors practising property law in New South Wales.
+                    a.button.button-medium.button-colored href="profile-gibney.html"  Read More
+              article.clearfix
+                .box-image
+                  img alt="team" src="/assets/team-placeholder.jpg" /
+                .box-text
+                  h3.title Rebecca Glover
+                  .contact-details
+                    a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                    br
+                    a href="tel:0260496666"  (02) 6049 6666
+                  .profile-description
+                    p
+                      | Rebecca has worked in the legal industry for many years, principally in the area of property law. She is the first point of contact for residential conveyancing, and assists Paul Gibney with business and commercial law, as well as
+                      | wills and estate administration.
+                    a.button.button-medium.button-colored href="#"  Read More
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    = render 'layouts/partials/branches_contact_info'

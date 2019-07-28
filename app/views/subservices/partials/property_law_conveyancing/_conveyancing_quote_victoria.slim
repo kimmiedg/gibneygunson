@@ -1,0 +1,201 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Conveyancing Quote - Victoria
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item
+                = link_to "Claims & Litigation", subservice_path(1)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+              li.menu-item.menu-item-has-children
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Our Conveyancing Team", subservice_path(3)
+                  li.menu-item
+                    = link_to "Conveyancing Quote - New South Wales", subservice_path(4)
+                  li.menu-item.current-menu-item
+                    = link_to "Conveyancing Quote - Victoria", subservice_path(5)
+                  li.menu-item
+                    = link_to "Leases", subservice_path(4)
+                  li.menu-item
+                    = link_to "Property Development", subservice_path(4)
+              li.menu-item
+                = link_to "Business Law", subservice_path(8)
+              li.menu-item
+                = link_to "Wills & Estates", subservice_path(14)
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.lead-text-medium.text-primary-color Get a Conveyancing Quote in Victoria
+            .small-bar.colored-bar
+            p.margin-bottom-20px
+              | Most people prefer to obtain an upfront fixed fee quotation as well as details of the out-of-pocket expenses (or disbursements).
+              br
+              br
+            h5.margin-bottom-20px
+              strong We usually charge:
+            .standard-table-wrapper.margin-bottom-30px
+              table.standard-table
+                tr
+                  th.text-center Residential property sale and purchase
+                  td.text-center
+                    | $1,200.00
+                    br
+                    span.text-small.text-grey
+                      | plus GST and disbursements
+                      br
+                      | (for existing residences)
+                tr
+                  th.text-center Vacant land purchase and sale
+                  td.text-center
+                    | $1,000.00
+                    br
+                    span.text-small.text-grey plus GST and disbursements
+                tr
+                  th.text-center rowspan="2"
+                    | Off-the-plan residential purchase
+                    br
+                  td.text-center
+                    | $1,300.00
+                    br
+                    span.text-small.text-grey
+                      | plus GST and disbursements
+                      br
+                      | (for residences yet to be constructed)
+                tr
+                  td.text-center
+                    | $1,100.00
+                    br
+                    span.text-small.text-grey
+                      | plus GST and disbursements
+                      br
+                      | (for vacant land)
+                tr
+                  td.text-center colspan="2"
+                    span.text-small.text-grey
+                      strong Off-the-plan residential purchase
+                      | &nbsp;usually require considerably more work than the first two categories above.
+            p.margin-bottom-60px
+              | We reserve the right to provide a different quotation if the scope of the work is unusual, if the property is held by company title or old system title, or if the property is acquired by a self-managed superannuation fund or a custody
+              | trustee.
+              br
+              br
+              | Non-residential properties, including farming properties, commercial properties, hotels, and development land, are individually quoted.
+              br
+              br
+              | On rare occasions, disputes occur. If a dispute does occur, and results in more than an hour’s work, the additional work will be separately charged at an hourly rate. We also charge separately, at an hourly rate, for non-routine taxation
+              | advice, including advice on capital gains tax, stamp duty, and land tax including land tax clearances.
+              br
+              br
+              | In Victoria, a vendor is required to prepare both a vendor’s statement and a contract. If a vendor’s statement is prepared before a buyer is found, we charge professional costs of
+              strong $300.00 plus GST
+              | &nbsp;and the cost of obtaining
+              | any searches (usually $450.00), assuming you can provide us with an up-to-date rate notice, water board notice, and copies of any permits that you have obtained in the last 7 years. The balance of our professional costs is usually charged
+              | when the matter finalises; if a buyer is not introduced, there will be no additional charges.
+              br
+              br
+              | Disbursements on a sale of land include documents that are required to be attached to the contract, including a title search and any other information necessary to complete the vendor’s statement, which usually amount to&nbsp;
+              strong $250.00.
+              br
+              br
+              | Disbursements for a purchase include
+              a href="https://extranet.sro.vic.gov.au/SRO/SROCalcs.nsf/transfer?OpenForm" target="_blank"  stamp duty
+              | and fees associated with enquiries to
+              a href="http://delwp.vic.gov.au/property-and-land-titles/forms,-guides-and-fees/fees" target="_blank"  Department of Environment, Land, Water and Planning (DELWP)
+              | and other authorities (e.g. local council and water authorities) from which we may need to seek information. In some instances, we recommend that the purchaser
+              | obtain a building certificate, which usually costs&nbsp;
+                strong $250.00
+              | Searches, excluding stamp duty, DELWP fees, and a building certificate normally cost&nbsp;
+                strong $250.00 plus GST
+              br
+              br
+              | There are some stamp duty concessions for newly constructed homes. Contact us if you believe you might be eligible.
+              br
+              br
+              | If settlement takes place outside the Albury/Wodonga area and a settlement agent is engaged, their fees are additional and are approximately&nbsp;
+                strong $55.00 plus GST
+              br
+            /! Info Box
+            aside.info-box.shadow.info-sign.width-540px
+              .info-text
+                h5.text-uppercase.text-primary-color-muted.margin-bottom-20px Other Information
+                p.text-aside Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                a.button.button-medium.button-colored.open-icon href="https://www.apps08.osr.nsw.gov.au/erevenue/calculators/landsalesimple.php"  NSW Office of State Revenue – Stamp Duty Calculator
+                br
+                a.button.button-medium.button-colored.open-icon href="http://www.nswlrs.com.au/land_titles/fees"  NSW Land Registry Services – Fees
+                br
+                a.button.button-medium.button-colored.open-icon href="https://www.lawsociety.com.au/for-the-public/know-your-rights/strata-title"  Buying a strata unit
+                br
+                a.button.button-medium.button-colored.open-icon href="https://www.lawsociety.com.au/for-the-public/know-your-rights/buying-a-home"  Guide to buying a home
+                br
+                a.button.button-medium.button-colored.open-icon href="https://www.lawsociety.com.au/for-the-public/know-your-rights/selling-a-home"  Guide to selling a home
+                br
+            /! end Info Box
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    .stripe.stripe-fullwidth.remove-top
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-sm-12.columns
+            p.lead-text-medium.text-primary-color.text-center.margin-bottom-50px Contact a member of our conveyancing team to arrange a consultation and get a definite quotation.
+            .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
+              .row
+                .col-md-offset-3.col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-gibney.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="profile-gibney.html" title=("view profile")  Paul Gibney
+                      .sub
+                        | Solicitor
+                        br
+                        a href="mailto:pgibney@gibneygunson.com.au"  pgibney@gibneygunson.com.au
+                        br
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="#"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  Rebecca Glover
+                      .sub
+                        | Assistant
+                        br
+                        a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                        br
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+    /! Stripe section
+    = render 'layouts/partials/branches_contact_info'

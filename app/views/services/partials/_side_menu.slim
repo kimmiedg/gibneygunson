@@ -1,0 +1,17 @@
+aside.col-md-4.columns.side-menu-widget
+  ul.side-menu
+    li.menu-item.menu-item-has-children
+      = link_to "Claims & Litigation", subservice_path(1)
+      ul.sub-menu
+        li.menu-item.current-menu-item
+          = link_to "Claims, Disputes, Compensation, Courts, and Litigation", subservice_path(1)
+        li.menu-item
+          = link_to "Superannuation Disability Claims", subservice_path(2)
+    li.menu-item.current-menu-ancestor
+      = link_to "Family Law", service_path(2)
+    li.menu-item
+      a href="property-team.html"  Property Law & Conveyancing
+    li.menu-item
+      a href="business-sales.html"  Business Law
+    li.menu-item
+      a href="wills-estates.html"  Wills & Estates

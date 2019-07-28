@@ -1,0 +1,101 @@
+header#header.extended
+  .container
+    /! Container
+    /! Logo
+    #logo
+      = link_to root_path
+        img.normal-dpi alt="logo" src="/assets/logo.png"
+        img.high-dpi alt="logo" src="/assets/gg_logo.png"
+    /! Header Navigation
+    nav#navigation
+      /! Mobile Side Menu
+      #mobile-nav-toggle
+        a#mobile-menu-button href="//index2.html#mobile-nav"
+          span
+      /! Header Top Links
+      #secondary-nav
+        ul.quick-links
+          li.contact-phone
+            a.phone-number href="tel:0260496666"
+              i.fa.fa-phone
+              | (02) 6049 6666
+          li.contact-phone
+            a.phone-number href="tel:0260496666"
+              i.fa.fa-fax
+              | (02) 6049 6666
+      /! Main Menu
+      #primary-nav
+        ul#main-menu
+          li.menu-item.menu-item-has-children
+            a href="#"  Services
+            ul.sub-menu
+              li.menu-item.menu-item-has-children
+                = link_to "Claims & Litigation", subservice_path(1)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Claims, Disputes, Compensation, and Litigation", subservice_path(1)
+                  li.menu-item
+                    = link_to "Superannuation Disability Claims", subservice_path(2)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+                / a href="family-law.html"  Family Law
+              li.menu-item.menu-item-has-children
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Our Conveyancing Team", subservice_path(3)
+                  li.menu-item
+                    = link_to "Conveyancing Quote - New South Wales", subservice_path(4)
+                  li.menu-item
+                    = link_to "Conveyancing Quote - Victoria", subservice_path(5)
+                  li.menu-item
+                    = link_to "Leases", subservice_path(6)
+                  li.menu-item
+                    = link_to "Property Development", subservice_path(7)
+              li.menu-item.menu-item-has-children
+                = link_to "Business Law", subservice_path(8)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Sales and Purchases of Businesses", subservice_path(8)
+                  li.menu-item
+                    = link_to "Leases", subservice_path(9)
+                  li.menu-item
+                    = link_to "Business Law, including Business Disputes", subservice_path(10)
+                  li.menu-item
+                    = link_to "Liquor Licensing", subservice_path(11)
+                  li.menu-item
+                    = link_to "Farm Sales and Purchases", subservice_path(12)
+                  li.menu-item
+                    = link_to "Property Development", subservice_path(13)
+              li.menu-item.menu-item-has-children
+                = link_to "Wills & Estates", subservice_path(14)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Estate Planning Price List", subservice_path(14)
+                  li.menu-item
+                    = link_to "Wills, Financial Powers of Attorney, and Medical Powers of Attorney", subservice_path(15)
+                  li.menu-item
+                    = link_to "Your Will & Superannuation", subservice_path(16)
+                  li.menu-item
+                    = link_to "Planning For Your Digital Assets", subservice_path(17)
+                  li.menu-item
+                    = link_to "Deceased Estates Administration", subservice_path(18)
+                  li.menu-item
+                    = link_to "Family Provision Claims – New South Wales", subservice_path(19)
+                  li.menu-item
+                    = link_to "Family Provision Claims – Victoria", subservice_path(20)
+          li.menu-item.menu-item-has-children
+            a href="#"  About Us
+            ul.sub-menu
+              li.menu-item
+                a href="our-story.html"  Our Story
+              li.menu-item
+                a href="our-people.html"  Our People
+          li.menu-item
+            a href="payment.html"  Payment
+          li.menu-item
+            a href="documents.html"  Documents
+          li.menu-item.button-item
+            a href="contact-us.html"  Contact Us
+      /! end Main Menu
+  /! end Container

@@ -1,0 +1,128 @@
+section#main
+  /! Homepage Hero
+  #home-hero
+    /! Homepage Slider
+    #home-slider.cycle-slideshow data-cycle-fx="fadeout" data-cycle-log="false" data-cycle-next=("> .cycle-direction .cycle-next") data-cycle-pager=("> .cycle-pager .container") data-cycle-pause-on-hover="false" data-cycle-paused="false" data-cycle-prev=("> .cycle-direction .cycle-prev") data-cycle-slides=("> .slide") data-cycle-speed="1000" data-cycle-starting-slide="0" data-cycle-swipe="true" data-cycle-swipe-fx="fadeout" data-cycle-timeout="6000"
+      .slide.slide1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.6" data-x-centered="true"
+        /! caption
+        .container
+          .row
+            .col-sm-12.columns
+              .page-title-wrapper
+                .page-title
+                  h1.h3-slogan.margin-bottom-10px Over 34 years of experience
+      .slide.slide2 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.6" data-x-centered="true"
+        /! caption
+        .container
+          .row
+            .col-sm-12.columns
+              .page-title-wrapper
+                .page-title
+                  h1.h3-slogan.margin-bottom-10px 2nd picture
+      /! pager links
+      .cycle-pager
+        .container
+      /! prev/next links
+      .cycle-direction
+        .cycle-prev
+          i.ion.ion-chevron-left
+        .cycle-next
+          i.ion.ion-chevron-right
+    /! end Homepage Slider
+  /! end Homepage Hero
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-transparent-bg
+      .stripe-upper-bg
+      .container
+        .row
+          .col-sm-12.colsumns
+            p.lead-text-medium.width-70pct-centered.text-center.margin-bottom-60px
+              | We deliver a prompt and professional service for all our legal transactions, ensuring that clients get the best possible result and that transactions are as&nbsp;
+              strong easy and stress-free
+              | &nbsp;as possible.
+            .picture-boxes.left-picture-box.box-filled-bg.picture-icon.short-description
+              .row
+                .col-sm-12.col-md-4.columns
+                  article
+                    a.block-link href="#"
+                    .box-wrapper.clearfix
+                      .box-image
+                        img alt="claims" src="/assets/claims.svg" /
+                      .box-text
+                        h5.title.text-primary-color Claims & Litigation
+                        p Superannuation Disability Claims, Estate Disputes, & Compensation
+                .col-sm-12.col-md-4.columns
+                  article
+                    a.block-link href="#"
+                    .box-wrapper.clearfix
+                      .box-image
+                        img alt="family" src="/assets/family.svg" /
+                      .box-text
+                        h5.title.text-primary-color Family Law
+                        p Divorce, Parenting Arrangements & Child Support
+                .col-sm-12.col-md-4.columns
+                  article
+                    a.block-link href="#"
+                    .box-wrapper.clearfix
+                      .box-image
+                        img alt="property" src="/assets/property.svg" /
+                      .box-text
+                        h5.title.text-primary-color Property Law
+                        p Conveyancing, Leases, & Property Development
+                .col-sm-12.col-md-offset-2.col-md-4.columns
+                  article
+                    a.block-link href="#"
+                    .box-wrapper.clearfix
+                      .box-image
+                        img alt="business" src="/assets/business.svg" /
+                      .box-text
+                        h5.title.text-primary-color Business Law
+                        p Sales & Purchases, Business Disputes, Liquor Licensing, & Farm Sales
+                .col-sm-12.col-md-4.columns
+                  article
+                    a.block-link href="#"
+                    .box-wrapper.clearfix
+                      .box-image
+                        img alt="will" src="/assets/will.svg" /
+                      .box-text
+                        h5.title.text-primary-color Wills & Estate
+                        p Wills, Financial & Medical Powers of Attorney, & Estate Administration and Litigation
+            .gap.margin-bottom-30px
+            p.lead-text-basic.width-70pct-centered.text-center
+              | Gibney & Gunson is a law firm based in Albury/Wodonga (with a Melbourne visiting office) that has extensive experience in providing legal services for claims, disputes, litigation,
+              | mediations, family law, conveyancing, business law, wills and estate planning, and deceased estates (including estate disputes).
+            p.text-center
+              a.button.button-medium.button-colored href="our-story.html"  Learn More About Us
+    /! end Stripe section
+    /! Stripe section
+    .stripe.stripe-box.stripe-white-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-sm-12.columns
+            p.lead-text-medium.width-80pct-centered.text-center.margin-bottom-60px
+              | The most important thing is to be able to count on your representation interdum et ante
+              strong ipsum primis
+              | in faucibus orci varius natoque.
+            .picture-boxes.top-picture-box.round-image.image-small.centered-content.medium-col-space
+              .row
+                .col-sm-6.columns
+                  article
+                    .box-image
+                      a href="#"
+                        img.img-shadow alt="approach" src="/assets/image3.jpg" /
+                    .box-text
+                      h6.title.text-uppercase
+                        a href="our-story.html"  Our Story
+                .col-sm-6.columns
+                  article
+                    .box-image
+                      a href="#"
+                        img.img-shadow alt="clients" src="/assets/image2.jpg" /
+                    .box-text
+                      h6.title.text-uppercase
+                        a href="our-people.html"  Our People
+    = render "/layouts/partials/branches_contact_info"

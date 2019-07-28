@@ -1,0 +1,178 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Deceased Estates Administration
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          /! Side Menu
+          aside.col-md-4.columns.side-menu-widget
+            ul.side-menu
+              li.menu-item
+                = link_to "Claims & Litigation", subservice_path(1)
+              li.menu-item
+                = link_to "Family Law", service_path(2)
+              li.menu-item
+                = link_to "Property Law & Conveyancing", subservice_path(3)
+              li.menu-item
+                = link_to "Business Law", subservice_path(8)
+              li.menu-item.menu-item-has-children.current-menu-ancestor
+                = link_to "Wills & Estates", subservice_path(14)
+                ul.sub-menu
+                  li.menu-item
+                    = link_to "Estate Planning Price List", subservice_path(14)
+                  li.menu-item
+                    = link_to "Wills, Financial Powers of Attorney, and Medical Powers of Attorney", subservice_path(15)
+                  li.menu-item
+                    = link_to "Your Will & Superannuation", subservice_path(16)
+                  li.menu-item
+                    = link_to "Planning For Your Digital Assets", subservice_path(17)
+                  li.menu-item.current-menu-item
+                    = link_to "Deceased Estates Administration", subservice_path(18)
+                  li.menu-item
+                    = link_to "Family Provision Claims – New South Wales", subservice_path(19)
+                  li.menu-item
+                    = link_to "Family Provision Claims – Victoria", subservice_path(20)
+          /! end Side Menu
+          .col-md-8.columns.page-intro
+            p.margin-bottom-40px
+              | Gibney & Gunson offers a personal service in an area that can be trying.
+              br/
+            h5.margin-bottom-20px
+              strong We can assist you with:
+            ul.check-list.indent-medium.margin-bottom-40px
+              li
+                | Applying for probate in&nbsp;
+                a href="/assets/GG-NSW-Probate-Application.pdf" target="_blank"
+                  strong New South Wales
+                | &nbsp;and&nbsp;
+                a href="/assets/GG-VIC-Probate-Application.pdf" target=("\n                                                                                                                                                                                                               ")
+                  strong Victoria
+              li Applying for letters of administration (where there is no valid will)
+              li Estate administration – calling in the assets of the estate, attending to payment of the debts, and distributing the estate to the beneficiaries
+              li Superannuation, death benefit, and life insurance claims
+              li Estate claims, dispute, and family provision claims
+            p.margin-bottom-40px
+              | If you are an executor of an estate, we can advise you about&nbsp;
+              a href="/assets/GG-Your-Duties-as-Executor.pdf" target="_blank"
+                strong your duties as an executor
+            p.margin-bottom-40px
+              | We recommend that people keep their&nbsp;
+              = link_to subservice_path(15) do
+                strong wills
+              | &nbsp;up to date as doing so makes distributing estates far easier on executors and beneficiaries during what is often a difficult time.
+            .gap.margin-bottom-60px
+            /! Info Box
+            aside.info-box.shadow.info-sign.width-540px
+              .info-text
+                h5.text-uppercase.text-primary-color-muted.margin-bottom-20px Information Documents
+                p.text-aside Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                a.button.button-medium.button-colored.download-icon href="/assets/GG-Your-Duties-as-Executor.pdf"  Your Duties as Executor
+                br/
+                a.button.button-medium.button-colored.download-icon href="/assets/GG-NSW-Probate-Application.pdf"  NSW Probate Application
+                br/
+                a.button.button-medium.button-colored.download-icon href="/assets/GG-VIC-Probate-Application.pdf"  VIC Probate Application
+                br/
+            /! end Info Box
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    .stripe.stripe-fullwidth.remove-top
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-sm-12.columns
+            p.lead-text-medium.text-primary-color.text-center.margin-bottom-50px Contact us if you wish to have the above documents prepared
+            .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
+              .row
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-gunson.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="profile-gunson.html" title=("view profile")  John Gunson
+                      .sub
+                        | Solicitor
+                        br/
+                        a href="mailto:jgunson@gibneygunson.com.au"  jgunson@gibneygunson.com.au
+                        br/
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="#"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  Sue Tanner
+                      .sub
+                        | Gunson's Assistant
+                        br/
+                        a href="mailto:stanner@gibneygunson.com.au"  stanner@gibneygunson.com.au
+                        br/
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="profile-gibney.html"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="profile-gibney.html" title=("view profile")  Paul Gibney
+                      .sub
+                        | Solicitor
+                        br/
+                        a href="mailto:pgibney@gibneygunson.com.au"  pgibney@gibneygunson.com.au
+                        br/
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+                .col-sm-6.col-md-3.columns
+                  article
+                    .box-image.overlay-enabled
+                      img alt=("team member") src="/assets/team-placeholder.jpg" /
+                      .image-overlay
+                        a href="#"
+                          span.label view profile
+                    .box-text
+                      h5.title.text-black
+                        a href="#" title=("view profile")  Rebecca Glover
+                      .sub
+                        | Gibney's Assistant
+                        br/
+                        a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                        br/
+                        a href="tel:0260496666"
+                          i.ion.ion-fw.ion-android-call
+                          | (02) 6049 6666
+            /! end
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    = render "layouts/partials/branches_contact_info"
