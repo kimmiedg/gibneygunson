@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   resources :services, only: [:index, :show]
   resources :subservices, only: [:index, :show]
+  get 'documents_dashboard' => 'pages#documents_dashboard'
 end
