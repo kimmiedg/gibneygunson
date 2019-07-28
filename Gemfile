@@ -26,7 +26,7 @@ gem 'owlcarousel-rails'
 gem 'ionicons-rails'
 
 
-group :production
+group :production do
   gem 'bundler', '~> 2.0.1'
 end
 
