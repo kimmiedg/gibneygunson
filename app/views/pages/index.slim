@@ -46,49 +46,49 @@ section#main
               .row
                 .col-sm-12.col-md-4.columns
                   article
-                    a.block-link href="#"
-                    .box-wrapper.clearfix
-                      .box-image
-                        img alt="claims" src="/assets/claims.svg" /
-                      .box-text
-                        h5.title.text-primary-color Claims & Litigation
-                        p Superannuation Disability Claims, Estate Disputes, & Compensation
+                    = link_to subservice_path(1), class: "block-link" do
+                      .box-wrapper.clearfix
+                        .box-image
+                          img alt="claims" src="/assets/claims.svg" /
+                        .box-text
+                          h5.title.text-primary-color Claims & Litigation
+                          p Superannuation Disability Claims, Estate Disputes, & Compensation
                 .col-sm-12.col-md-4.columns
                   article
-                    a.block-link href="#"
-                    .box-wrapper.clearfix
-                      .box-image
-                        img alt="family" src="/assets/family.svg" /
-                      .box-text
-                        h5.title.text-primary-color Family Law
-                        p Divorce, Parenting Arrangements & Child Support
+                    = link_to service_path(2), class: "block-link" do
+                      .box-wrapper.clearfix
+                        .box-image
+                          img alt="family" src="/assets/family.svg" /
+                        .box-text
+                          h5.title.text-primary-color Family Law
+                          p Divorce, Parenting Arrangements & Child Support
                 .col-sm-12.col-md-4.columns
                   article
-                    a.block-link href="#"
-                    .box-wrapper.clearfix
-                      .box-image
-                        img alt="property" src="/assets/property.svg" /
-                      .box-text
-                        h5.title.text-primary-color Property Law
-                        p Conveyancing, Leases, & Property Development
+                    = link_to subservice_path(3), class: "block-link" do
+                      .box-wrapper.clearfix
+                        .box-image
+                          img alt="property" src="/assets/property.svg" /
+                        .box-text
+                          h5.title.text-primary-color Property Law
+                          p Conveyancing, Leases, & Property Development
                 .col-sm-12.col-md-offset-2.col-md-4.columns
                   article
-                    a.block-link href="#"
-                    .box-wrapper.clearfix
-                      .box-image
-                        img alt="business" src="/assets/business.svg" /
-                      .box-text
-                        h5.title.text-primary-color Business Law
-                        p Sales & Purchases, Business Disputes, Liquor Licensing, & Farm Sales
+                    = link_to subservice_path(8), class: "block-link" do
+                      .box-wrapper.clearfix
+                        .box-image
+                          img alt="business" src="/assets/business.svg" /
+                        .box-text
+                          h5.title.text-primary-color Business Law
+                          p Sales & Purchases, Business Disputes, Liquor Licensing, & Farm Sales
                 .col-sm-12.col-md-4.columns
                   article
-                    a.block-link href="#"
-                    .box-wrapper.clearfix
-                      .box-image
-                        img alt="will" src="/assets/will.svg" /
-                      .box-text
-                        h5.title.text-primary-color Wills & Estate
-                        p Wills, Financial & Medical Powers of Attorney, & Estate Administration and Litigation
+                    = link_to subservice_path(14), class: "block-link" do
+                      .box-wrapper.clearfix
+                        .box-image
+                          img alt="will" src="/assets/will.svg" /
+                        .box-text
+                          h5.title.text-primary-color Wills & Estate
+                          p Wills, Financial & Medical Powers of Attorney, & Estate Administration and Litigation
             .gap.margin-bottom-30px
             p.lead-text-basic.width-70pct-centered.text-center
               | Gibney & Gunson is a law firm based in Albury/Wodonga (with a Melbourne visiting office) that has extensive experience in providing legal services for claims, disputes, litigation,
