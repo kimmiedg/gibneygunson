@@ -49,11 +49,12 @@ section#main
                     .box-image.overlay-enabled
                       img alt=("team member") src="/assets/team-placeholder.jpg" /
                       .image-overlay
-                        a href="profile-gunson.html"
+                        = link_to user_profile_path(2) do
                           span.label view profile
                     .box-text
                       h5.title.text-black
-                        a href="#" title=("view profile")  John Gunson
+                        = link_to "John Gunson", user_profile_path(2), title: "View Profile"
+
                       .sub
                         | Partner
                 .col-sm-6.col-md-3.columns
@@ -61,11 +62,12 @@ section#main
                     .box-image.overlay-enabled
                       img alt=("team member") src="/assets/team-placeholder.jpg" /
                       .image-overlay
-                        a href="profile-gibney.html"
+                        = link_to user_profile_path(1) do
                           span.label view profile
                     .box-text
                       h5.title.text-black
-                        a href="#" title=("view profile")  Paul Gibney
+                        = link_to "Paul Gibney", user_profile_path(1), title: "View Profile"
+
                       .sub
                         | Partner
                 .col-sm-6.col-md-3.columns
@@ -73,7 +75,7 @@ section#main
                     .box-image.overlay-enabled
                       img alt=("team member") src="/assets/team-placeholder.jpg" /
                       .image-overlay
-                        a href="profile-tanner.html"
+                        a href="#"
                           span.label view profile
                     .box-text
                       h5.title.text-black
@@ -89,7 +91,7 @@ section#main
                           span.label view profile
                     .box-text
                       h5.title.text-black
-                        a href="team-view-gunson.html" title=("view profile")  Rebecca Glover
+                        a href="#" title=("view profile")  Rebecca Glover
                       .sub
                         | Gibney's Assistant
             /! end

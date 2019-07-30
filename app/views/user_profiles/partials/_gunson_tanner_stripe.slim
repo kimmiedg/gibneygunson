@@ -1,0 +1,47 @@
+.stripe.stripe-fullwidth.stripe-white-bg
+  .stripe-upper-bg
+  .container
+    /! Container
+    .row
+      .col-sm-12.columns
+        p.lead-text-medium.text-primary-color.text-center.margin-bottom-50px Contact us for legal advice about any of the above areas
+        .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
+          .row
+            .col-md-offset-3.col-sm-6.col-md-3.columns
+              article
+                .box-image.overlay-enabled
+                  img alt=("team member") src="/assets/team-placeholder.jpg" /
+                  .image-overlay
+                    = link_to user_profile_path(2) do
+                      span.label view profile
+                .box-text
+                  h5.title.text-black
+                    = link_to "John Gunson", user_profile_path(2), title: "view profile"
+
+                  .sub
+                    | Partner
+                    br
+                    a href="mailto:jgunson@gibneygunson.com.au"  jgunson@gibneygunson.com.au
+                    br
+                    a href="tel:0260496666"
+                      i.ion.ion-fw.ion-android-call
+                      | (02) 6049 6666
+            .col-sm-6.col-md-3.columns
+              article
+                .box-image.overlay-enabled
+                  img alt=("team member") src="/assets/team-placeholder.jpg" /
+                  .image-overlay
+                    = link_to user_profile_path(3) do
+                      span.label view profile
+                .box-text
+                  h5.title.text-black
+                    = link_to "Sue Tanner", user_profile_path(3), title: "view profile"
+
+                  .sub
+                    | Assistant
+                    br
+                    a href="mailto:stanner@gibneygunson.com.au"  stanner@gibneygunson.com.au
+                    br
+                    a href="tel:0260496666"
+                      i.ion.ion-fw.ion-android-call
+                      | (02) 6049 6666
