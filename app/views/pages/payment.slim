@@ -1,0 +1,58 @@
+section#main
+  /! Hero Image &amp; Page Title
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                h1 Payment
+  /! end Hero Image &amp; Page Title
+  /! Page Content
+  #page-content.fullwidth-layout
+    /! Stripe section
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        /! Container
+        .row
+          .col-md-8.columns
+            p
+              | Please make sure all information is correct
+            /! Contact Form
+            form#contact-form.contact-form.contact-form-main action="" method="post"
+              .row
+                .col-md-6.columns
+                  .field-author
+                    label
+                      | First Name
+                      span.required *
+                    input required="" type="text" value="" /
+                .col-md-6.columns
+                  .field-author
+                    label
+                      | Last Name
+                      span.required *
+                    input required="" type="text" value="" /
+              .field-author
+                label for="author"
+                  | Invoice Number
+                  span.required *
+                input required="" type="text" value="" /
+              .field-author
+                label for="author"
+                  | Invoice Amount
+                  span.required *
+                input placeholder="AUD" required="" type="number" value="" /
+              .field-submit
+                a.submit.button href='#' Proceed to Payment
+                / input#submit.button name="submit" type="submit" value=("Proceed to Payment") /
+                span.loader.hidden-xs-up
+            #contact-form-message.info
+              p
+            /! end Contact Form
+      /! end Container
+    /! end Stripe section
+    /! Stripe section
+    = render 'layouts/partials/branches_contact_info'

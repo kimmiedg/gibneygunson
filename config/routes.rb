@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'contact_us' => 'pages#contact_us'
   get 'our_story' => 'pages#our_story'
   get 'our_people' => 'pages#our_people'
+  get 'payment' => 'pages#payment'
 end
