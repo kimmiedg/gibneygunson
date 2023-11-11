@@ -2,6 +2,7 @@ databases:
   - name: postgres
     ipAllowList: []
     databaseName: gibneygunson_production
+    user: gibneygunson_production
     # user: my_app_render
 
 services:
