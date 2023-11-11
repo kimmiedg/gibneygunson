@@ -2,9 +2,7 @@ databases:
   - name: postgres
     ipAllowList: []
     databaseName: gibneygunson_production
-    user: <%= ENV["GG_DB_USER"] %>
-    # user: gibneygunson_production
-    # user: my_app_render
+    user: gg_admin
 
 services:
   - type: web
@@ -13,9 +11,18 @@ services:
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"
     envVars:
-      - key: <%= ENV["GG_DB_HOST"] %>
+      - key: ggdbhost
         fromDatabase:
-          name: gibneygunson-db
-          property: connectionString
-      - key: <%= ENV["SECRET_KEY_BASE_GG"] %>
+          name: gibneygunsonDb
+          property: host
+      - key: ggdbuser
+        fromDatabase:
+          name: gibneygunsonDb
+          property: user
+      - key: ggdbpass
+        fromDatabase:
+          name: gibneygunsonDb
+          property: password
+      - key: secret_key_base
+        name: SECRET_KEY_BASE_GG
         sync: false
