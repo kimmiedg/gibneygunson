@@ -23,3 +23,6 @@ test:
 production:
   <<: *default
   database: gibneygunson_production
+  user: <%= ENV["GG_DB_USER"] %>
+  password: <%= ENV["GG_DB_PASS"] %>
+  host: <%= ENV["GG_DB_HOST"] %>
