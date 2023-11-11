@@ -1,14 +1,14 @@
 databases:
-  - name: postgres
+  - name: gibneygunsonDb
     ipAllowList: []
     databaseName: gibneygunson_production
     user: gg_admin
 
 services:
   - type: web
-    name: gibneygunson-db
+    name: gibneygunsonDb
     env: ruby
-    buildCommand: "./render-build.sh"
+    buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec rails s"
     envVars:
       - key: ggdbhost

@@ -22,7 +22,7 @@ test:
 
 production:
   <<: *default
-  database: gibneygunson_production
-  user: <%= ENV["GG_DB_USER"] %>
-  password: <%= ENV["GG_DB_PASS"] %>
-  host: <%= ENV["GG_DB_HOST"] %>
+  database: gibneygunsonDb
+  user: <%= ENV["ggdbuser"] %>
+  password: <%= ENV["ggdbpass"] %>
+  host: <%= ENV["ggdbhost"] %>
