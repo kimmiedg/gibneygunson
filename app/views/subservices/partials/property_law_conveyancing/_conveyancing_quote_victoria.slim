@@ -18,31 +18,8 @@ section#main
       .container
         /! Container
         .row
-          /! Side Menu
-          aside.col-md-4.columns.side-menu-widget
-            ul.side-menu
-              li.menu-item
-                = link_to "Claims & Litigation", subservice_path(1)
-              li.menu-item
-                = link_to "Family Law", service_path(2)
-              li.menu-item.menu-item-has-children
-                = link_to "Property Law & Conveyancing", subservice_path(3)
-                ul.sub-menu
-                  li.menu-item
-                    = link_to "Our Conveyancing Team", subservice_path(3)
-                  li.menu-item
-                    = link_to "Conveyancing Quote - New South Wales", subservice_path(4)
-                  li.menu-item.current-menu-item
-                    = link_to "Conveyancing Quote - Victoria", subservice_path(5)
-                  li.menu-item
-                    = link_to "Leases", subservice_path(4)
-                  li.menu-item
-                    = link_to "Property Development", subservice_path(4)
-              li.menu-item
-                = link_to "Business Law", subservice_path(8)
-              li.menu-item
-                = link_to "Wills & Estates", subservice_path(14)
-          /! end Side Menu
+          = render 'services/partials/sidebar_nav'
+
           .col-md-8.columns.page-intro
             p.lead-text-medium.text-primary-color Get a Conveyancing Quote in Victoria
             .small-bar.colored-bar
@@ -188,11 +165,11 @@ section#main
                           span.label view profile
                     .box-text
                       h5.title.text-black
-                        a href="#" title=("view profile")  Rebecca Glover
+                        a href="#" title=("view profile")  Annie Moloney
                       .sub
                         | Assistant
                         br
-                        a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                        a href="mailto:amoloney@gibneygunson.com.au"  amoloney@gibneygunson.com.au
                         br
                         a href="tel:0260496666"
                           i.ion.ion-fw.ion-android-call

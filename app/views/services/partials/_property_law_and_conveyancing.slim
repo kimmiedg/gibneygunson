@@ -1,0 +1,24 @@
+#page-content.fullwidth-layout
+  .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+    .stripe-upper-bg
+    .container
+      .row
+        = render 'services/partials/sidebar_nav'
+
+        .col-md-8.columns.page-intro
+          p.lead-text-medium.text-primary-color Property Law & Conveyancing in Albury
+          .small-bar.colored-bar
+          p Buying or selling a property is one of the most important transactions a person will undertake. Our experienced team at Gibney & Gunson is headed by the only Property Law Accredited Specialist in Albury/Wodonga.
+          ul.check-list.indent-medium.margin-bottom-40px
+            li
+              = link_to "Our Conveyancing Team", subservice_path(3)
+            li
+              = link_to "Conveyancing Quote – New South Wales", subservice_path(4)
+            li
+              = link_to "Conveyancing Quote – Victoria", subservice_path(5)
+            li
+              = link_to "Leases", subservice_path(6)
+            li
+              = link_to "Property Development", subservice_path(7)
+  = render 'user_profiles/partials/gunson_tanner_stripe'
+  = render 'layouts/partials/branches_contact_info'

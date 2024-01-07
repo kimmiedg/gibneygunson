@@ -18,35 +18,8 @@ section#main
       .container
         /! Container
         .row
-          /! Side Menu
-          aside.col-md-4.columns.side-menu-widget
-            ul.side-menu
-              li.menu-item
-                = link_to "Claims & Litigation", subservice_path(1)
-              li.menu-item
-                = link_to "Family Law", service_path(2)
-              li.menu-item
-                = link_to "Property Law & Conveyancing", subservice_path(3)
-              li.menu-item
-                = link_to "Business Law", subservice_path(8)
-              li.menu-item.menu-item-has-children.current-menu-ancestor
-                = link_to "Wills & Estates", subservice_path(14)
-                ul.sub-menu
-                  li.menu-item
-                    = link_to "Estate Planning Price List", subservice_path(14)
-                  li.menu-item.current-menu-item
-                    = link_to "Wills, Financial Powers of Attorney, and Medical Powers of Attorney", subservice_path(15)
-                  li.menu-item
-                    = link_to "Your Will & Superannuation", subservice_path(16)
-                  li.menu-item
-                    = link_to "Planning For Your Digital Assets", subservice_path(17)
-                  li.menu-item
-                    = link_to "Deceased Estates Administration", subservice_path(18)
-                  li.menu-item
-                    = link_to "Family Provision Claims – New South Wales", subservice_path(19)
-                  li.menu-item
-                    = link_to "Family Provision Claims – Victoria", subservice_path(20)
-          /! end Side Menu
+          = render 'services/partials/sidebar_nav'
+          
           .col-md-8.columns.page-intro
             p.margin-bottom-40px
               | John Gunson and Paul Gibney have both been practising as solicitors for over 30 years, and have extensive experience in preparation of wills, financial powers of attorney, and medical powers of attorney, as well as estate administration and
@@ -211,11 +184,11 @@ section#main
                           span.label view profile
                     .box-text
                       h5.title.text-black
-                        a href="#" title=("view profile")  Rebecca Glover
+                        a href="#" title=("view profile")  Annie Moloney
                       .sub
                         | Gibney's Assistant
                         br
-                        a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                        a href="mailto:amoloney@gibneygunson.com.au"  amoloney@gibneygunson.com.au
                         br
                         a href="tel:0260496666"
                           i.ion.ion-fw.ion-android-call

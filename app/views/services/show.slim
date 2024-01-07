@@ -1,1 +1,14 @@
-= render 'services/partials/family_law'
+- if @service_name
+  - service_presenter = V1::ServicePresenter.new(@service)
+  section#main
+    #hero-image.image-bg
+      .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+        .container
+          .row
+            .col-sm-12.columns
+              .page-title-wrapper
+                .page-title
+                  p.lead-text-large Service
+                  h1 = service_presenter.get_service_title
+
+    = render "services/partials/#{@service_name}", service_presenter: service_presenter

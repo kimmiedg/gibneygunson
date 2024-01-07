@@ -18,5 +18,5 @@ end
 UserProfile.create(name: "Paul Gibney", position: "Solicitor", email: "pgibney@gibneygunson.com.au", phone_no: "(02) 6049 6666")
 UserProfile.create(name: "John Gunson", position: "Solicitor", email: "jgunson@gibneygunson.com.au", phone_no: "(02) 6049 6666")
 UserProfile.create(name: "Sue Tanner", position: "Gunson's Assistant", email: "stanner@gibneygunson.com.au", phone_no: "(02) 6049 6666")
-UserProfile.create(name: "Rebecca Glover", position: "Gibney's Assistant", email: "rglover@gibneygunson.com.au", phone_no: "(02) 6049 6666")
+UserProfile.create(name: "Annie Moloney", position: "Gibney's Assistant", email: "amoloney@gibneygunson.com.au", phone_no: "(02) 6049 6666")
 puts "User profiles created."

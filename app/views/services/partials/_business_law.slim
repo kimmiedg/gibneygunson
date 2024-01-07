@@ -1,0 +1,27 @@
+#page-content.fullwidth-layout
+  .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+    .stripe-upper-bg
+    .container
+      .row
+        = render 'services/partials/sidebar_nav'
+
+        .col-md-8.columns.page-intro
+          p.lead-text-medium.text-primary-color Our Business Law Services in Albury
+          .small-bar.colored-bar
+          p Paul Gibney is a Law Society Accredited Specialist in Business Law and has practised in this area since 1985.
+          ul.check-list.indent-medium.margin-bottom-40px
+            li
+              = link_to 'Sales and Purchases of Businesses', subservice_path(8)
+            li
+              = link_to 'Leases', subservice_path(9)
+            li
+              = link_to 'Business Law, including Business Disputes', subservice_path(10)
+            li
+              = link_to 'Liquor Licensing', subservice_path(11)
+            li
+              = link_to 'Farm Sales and Purchases', subservice_path(12)
+            li
+              = link_to 'Property Development', subservice_path(13)
+
+  = render 'user_profiles/partials/gunson_tanner_stripe'
+  = render 'layouts/partials/branches_contact_info'

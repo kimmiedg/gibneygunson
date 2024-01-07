@@ -1,0 +1,12 @@
+- service = V1::ServicePresenter.new(@service)
+aside.col-md-4.columns.side-menu-widget
+  ul.side-menu
+    - @services.each do |s|
+      li.menu-item class="#{service.get_additional_classes(s.name)}"
+        = link_to s.name, service_path(s.id)
+        - if service.is_current_service_active(s) && s.subservices
+          ul.sub-menu
+            - s.subservices.each do |subservice|
+              - subservice_presenter = V1::SubservicePresenter.new(subservice)
+              li class="#{subservice_presenter.get_additional_sublabel_classes(@subservice)}"
+                = link_to subservice_presenter.get_sidebar_label_name, subservice_path(subservice)

@@ -1,0 +1,19 @@
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+/Users/kimmie/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-uodjb2 sitelibdir\=./.gem.20240106-77228-uodjb2 clean
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-uodjb2 sitelibdir\=./.gem.20240106-77228-uodjb2
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-uodjb2 sitelibdir\=./.gem.20240106-77228-uodjb2 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240106-77228-uodjb2/racc
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-uodjb2 sitelibdir\=./.gem.20240106-77228-uodjb2 clean

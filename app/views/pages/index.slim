@@ -19,20 +19,14 @@ section#main
               .page-title-wrapper
                 .page-title
                   h1.h3-slogan.margin-bottom-10px 2nd picture
-      /! pager links
       .cycle-pager
         .container
-      /! prev/next links
       .cycle-direction
         .cycle-prev
           i.ion.ion-chevron-left
         .cycle-next
           i.ion.ion-chevron-right
-    /! end Homepage Slider
-  /! end Homepage Hero
-  /! Page Content
   #page-content.fullwidth-layout
-    /! Stripe section
     .stripe.stripe-transparent-bg
       .stripe-upper-bg
       .container
@@ -46,10 +40,10 @@ section#main
               .row
                 .col-sm-12.col-md-4.columns
                   article
-                    = link_to subservice_path(1), class: "block-link" do
+                    = link_to service_path(1), class: "block-link" do
                       .box-wrapper.clearfix
                         .box-image
-                          img alt="claims" src="/assets/claims.svg" /
+                          img alt="claims" src="/assets/claims.svg" 
                         .box-text
                           h5.title.text-primary-color Claims & Litigation
                           p Superannuation Disability Claims, Estate Disputes, & Compensation
@@ -95,12 +89,9 @@ section#main
               | mediations, family law, conveyancing, business law, wills and estate planning, and deceased estates (including estate disputes).
             p.text-center
               a.button.button-medium.button-colored href="our-story.html"  Learn More About Us
-    /! end Stripe section
-    /! Stripe section
     .stripe.stripe-box.stripe-white-bg
       .stripe-upper-bg
       .container
-        /! Container
         .row
           .col-sm-12.columns
             p.lead-text-medium.width-80pct-centered.text-center.margin-bottom-60px

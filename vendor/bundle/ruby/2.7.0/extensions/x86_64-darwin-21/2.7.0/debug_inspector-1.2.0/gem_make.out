@@ -1,0 +1,16 @@
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+/Users/kimmie/.rbenv/versions/2.7.0/bin/ruby -I /Users/kimmie/.rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20240105-16488-58v6cd.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/2.7.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20240105-16488-evaibh

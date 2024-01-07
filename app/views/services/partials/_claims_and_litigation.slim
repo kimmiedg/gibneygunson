@@ -1,0 +1,21 @@
+#page-content.fullwidth-layout
+  .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+    .stripe-upper-bg
+    .container
+      .row
+        = render 'services/partials/sidebar_nav'
+
+        .col-md-8.columns.page-intro
+          p.lead-text-medium.text-primary-color Claims & Litigation in Albury
+          .small-bar.colored-bar
+          p We provide experienced legal advice regarding claims and litigation, including compensation cases, family law, and estate disputes.
+          ul.check-list.indent-medium.margin-bottom-40px
+            li
+              = link_to "Family Law", service_path(2)
+            li
+              a href='claims-superannuation.html' Superannuation Disability Claims
+            li
+              a href='litigation.html' Other claims
+
+  = render 'user_profiles/partials/gunson_tanner_stripe'
+  = render 'layouts/partials/branches_contact_info'

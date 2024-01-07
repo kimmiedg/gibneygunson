@@ -1,0 +1,29 @@
+#page-content.fullwidth-layout
+  .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+    .stripe-upper-bg
+    .container
+      .row
+        = render 'services/partials/sidebar_nav'
+
+        .col-md-8.columns.page-intro
+          p.lead-text-medium.text-primary-color Wills & Estates Services in Albury
+          .small-bar.colored-bar
+          p We have extensive experience in preparation of wills, financial powers of attorney, and medical powers of attorney, as well as estate administration and estate litigation.
+          ul.check-list.indent-medium.margin-bottom-40px
+            li
+              = link_to "Estate Planning Price List", service_path(14)
+            li
+              = link_to "Wills, Financial Powers of Attorney, and Medical Powers of Attorney", service_path(15)
+            li
+              = link_to "Your Will & Superannuation", service_path(16)
+            li
+              = link_to "Planning For Your Digital Assets", service_path(17)
+            li
+              = link_to "Deceased Estates Administration", service_path(18)
+            li
+              = link_to "Family Provision Claims – New South Wales", service_path(19)
+            li
+              = link_to "Family Provision Claims – Victoria", service_path(20)
+
+  = render 'user_profiles/partials/gunson_tanner_stripe'
+  = render 'layouts/partials/branches_contact_info'

@@ -18,33 +18,8 @@ section#main
       .container
         /! Container
         .row
-          /! Side Menu
-          aside.col-md-4.columns.side-menu-widget
-            ul.side-menu
-              li.menu-item
-                = link_to "Claims & Litigation", subservice_path(1)
-              li.menu-item
-                = link_to "Family Law", service_path(2)
-              li.menu-item
-                = link_to "Property Law & Conveyancing", subservice_path(3)
-              li.menu-item.menu-item-has-children.current-menu-ancestor
-                = link_to "Business Law", subservice_path(8)
-                ul.sub-menu
-                  li.menu-item
-                    = link_to "Sales and Purchases of Businesses", subservice_path(8)
-                  li.menu-item
-                    = link_to "Leases", subservice_path(9)
-                  li.menu-item
-                    = link_to "Business Law, including Business Disputes", subservice_path(10)
-                  li.menu-item
-                    = link_to "Liquor Licensing", subservice_path(11)
-                  li.menu-item
-                    = link_to "Farm Sales and Purchases", subservice_path(12)
-                  li.menu-item.current-menu-item
-                    = link_to "Property Development", subservice_path(13)
-              li.menu-item
-                = link_to "Wills & Estates", subservice_path(14)
-          /! end Side Menu
+          = render 'services/partials/sidebar_nav'
+
           .col-md-8.columns.page-intro
             p.margin-bottom-40px
               | Paul Gibney is a Property Law and Business Law Accredited Specialist, and has acted for many property developers and private clients in relation to subdivisions and developments.
@@ -95,11 +70,11 @@ section#main
                           span.label view profile
                     .box-text
                       h5.title.text-black
-                        a href="#" title=("view profile")  Rebecca Glover
+                        a href="#" title=("view profile")  Annie Moloney
                       .sub
                         | Assistant
                         br
-                        a href="mailto:rglover@gibneygunson.com.au"  rglover@gibneygunson.com.au
+                        a href="mailto:amoloney@gibneygunson.com.au"  amoloney@gibneygunson.com.au
                         br
                         a href="tel:0260496666"
                           i.ion.ion-fw.ion-android-call

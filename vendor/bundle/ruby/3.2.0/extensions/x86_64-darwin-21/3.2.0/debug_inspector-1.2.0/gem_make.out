@@ -1,0 +1,19 @@
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+/Users/kimmie/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-yg6lcp sitelibdir\=./.gem.20240106-77228-yg6lcp clean
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-yg6lcp sitelibdir\=./.gem.20240106-77228-yg6lcp
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-yg6lcp sitelibdir\=./.gem.20240106-77228-yg6lcp install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20240106-77228-yg6lcp
+
+current directory: /Users/kimmie/Documents/work/practice/gibneygunson/vendor/bundle/ruby/3.2.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20240106-77228-yg6lcp sitelibdir\=./.gem.20240106-77228-yg6lcp clean
