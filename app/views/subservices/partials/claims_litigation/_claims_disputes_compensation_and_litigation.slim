@@ -17,24 +17,8 @@ section#main
       .container
         /! Container
         .row
-          /! Side Menu
-          aside.col-md-4.columns.side-menu-widget
-            ul.side-menu
-              li.menu-item.menu-item-has-children.current-menu-ancestor
-                = link_to "Claims & Litigation", subservice_path(1)
-                ul.sub-menu
-                  li.menu-item.current-menu-item
-                    = link_to "Claims, Disputes, Compensation, Courts, and Litigation", subservice_path(1)
-                  li.menu-item
-                    = link_to "Superannuation Disability Claims", subservice_path(2)
-              li.menu-item
-                = link_to "Family Law", service_path(2)
-              li.menu-item
-                = link_to "Property Law & Conveyancing", subservice_path(3)
-              li.menu-item
-                = link_to "Business Law", subservice_path(8)
-              li.menu-item
-                = link_to "Wills & Estates", subservice_path(14)
+          = render 'services/partials/sidebar_nav'
+
           /! end Side Menu
           .col-md-8.columns.page-intro
             p.lead-text-medium.text-primary-color Gibney & Gunson has a claims, court, and litigation team, with John Gunson as partner-in-charge, supported by highly experienced and skilled staff.
@@ -43,13 +27,9 @@ section#main
             p
               | John recognises the need for cost effective resolutions, while protecting a client’s legal rights. He believes that court action should be initiated only after due consideration of the merits and circumstances of a particular case, and that
               | alternative means of dispute resolution, including mediation, settlement, arbitration, and out-of-court solutions, will often be the best approach for the client.
-      /! end Container
-    /! end Stripe section
-    /! Stripe section
     .stripe.stripe-transparent-bg
       .stripe-upper-bg
       .container
-        /! Container
         .row
           .col-sm-12.col-md-6.columns
             p.lead-text-medium.text-primary-color John and his team offer expert advice and legal representation in:

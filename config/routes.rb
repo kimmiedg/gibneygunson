@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'pages#index'
 
-  resources :services, only: [:index, :show]
+  resources :services, only: [:index, :show] do
+    get 'other_claims_litigation', on: :collection
+  end
+  
   resources :subservices, only: [:index, :show]
   resources :user_profiles, only: [:show, :index]
   get 'documents_dashboard' => 'pages#documents_dashboard'

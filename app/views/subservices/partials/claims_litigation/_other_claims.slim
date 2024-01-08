@@ -1,0 +1,39 @@
+section#main
+  #hero-image.image-bg
+    .slide.banner-single-service-v1 data-overlay-bg-color="royal-blue" data-overlay-opacity="0.5"
+      .container
+        .row
+          .col-sm-12.columns
+            .page-title-wrapper
+              .page-title
+                p.lead-text-large Service
+                h1 Litigation
+
+  #page-content.fullwidth-layout
+    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+      .stripe-upper-bg
+      .container
+        .row
+          = render 'services/partials/sidebar_nav'
+
+          .col-md-8.columns.page-intro
+            p.lead-text-medium.text-primary-color Laws in New South Wales prohibit us from advertising legal services for some types of claims.
+            .small-bar.colored-bar
+            p
+              ul
+                li
+                  | If you are an&nbsp;
+                  strong existing client&nbsp;
+                  | of Gibney & Gunson, or if you do not live in New South Wales, please&nbsp;
+                  = link_to 'click here', subservice_path(1)
+            p
+              ul
+                li
+                  | If you are&nbsp;
+                  strong
+                    u not an existing client
+                  | &nbsp;of Gibney & Gunson and if you live in New South Wales, please&nbsp;
+                  = link_to 'click here', other_claims_litigation_services_path
+                  
+    = render 'user_profiles/partials/gunson_tanner_stripe'
+    = render 'layouts/partials/branches_contact_info'
