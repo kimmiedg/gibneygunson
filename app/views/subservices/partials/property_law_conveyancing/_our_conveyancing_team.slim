@@ -19,6 +19,12 @@ section#main
           .col-md-8.columns.page-intro
             p.lead-text-medium.text-primary-color Buying and selling a property is one of the most important transactions a person will undertake.
             .small-bar.colored-bar
+            ul.margin-bottom-60px
+              li
+                = link_to "Get a conveyancing quotation for New South Wales.", subservice_path(3)
+              li
+                = link_to "Get a conveyancing quotation for Victoria.", subservice_path(5)
+
             p.margin-bottom-20px
               | Our experienced team at Gibney & Gunson is headed by the only Property Law Accredited Specialist in Albury/Wodonga.
               br
@@ -64,10 +70,9 @@ section#main
                     a href="tel:0260496666"  (02) 6049 6666
                   .profile-description
                     p
-                      | Rebecca has worked in the legal industry for many years, principally in the area of property law. She is the first point of contact for residential conveyancing, and assists Paul Gibney with business and commercial law, as well as
+                      | Annie has worked in the legal industry for many years, principally in the area of property law. She is the first point of contact for residential conveyancing, and assists Paul Gibney with business and commercial law, as well as
                       | wills and estate administration.
                     a.button.button-medium.button-colored href="#"  Read More
-      /! end Container
-    /! end Stripe section
-    /! Stripe section
+                    
+    = render 'layouts/partials/paul_annie_contact_persons'
     = render 'layouts/partials/branches_contact_info'
