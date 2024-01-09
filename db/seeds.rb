@@ -1,4 +1,4 @@
-services =[{name: "Claims & Litigation", subservices: ["Claims, Disputes, Compensation, and Litigation","Superannuation Disability Claims"]},
+services =[{name: "Claims & Litigation", subservices: ["Claims, Disputes, Compensation, and Litigation","Superannuation Disability Claims", "Other claims"]},
           {name: "Family Law", subservices: []},
           {name: "Property Law & Conveyancing", subservices: ["Our Conveyancing Team", "Conveyancing Quote – New South Wales",
             "Conveyancing Quote – Victoria","Leases", "Property Development"]},
