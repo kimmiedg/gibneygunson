@@ -18,7 +18,7 @@ section#main
             .col-sm-12.columns
               .page-title-wrapper
                 .page-title
-                  h1.h3-slogan.margin-bottom-10px 2nd picture
+                  h1.h3-slogan.margin-bottom-10px 
       .cycle-pager
         .container
       .cycle-direction
@@ -43,7 +43,7 @@ section#main
                     = link_to service_path(1), class: "block-link" do
                       .box-wrapper.clearfix
                         .box-image
-                          img alt="claims" src="/assets/claims.svg" 
+                          img alt="claims" src="/assets/claims.svg"
                         .box-text
                           h5.title.text-primary-color Claims & Litigation
                           p Superannuation Disability Claims, Estate Disputes, & Compensation
@@ -58,7 +58,7 @@ section#main
                           p Divorce, Parenting Arrangements & Child Support
                 .col-sm-12.col-md-4.columns
                   article
-                    = link_to subservice_path(3), class: "block-link" do
+                    = link_to service_path(3), class: "block-link" do
                       .box-wrapper.clearfix
                         .box-image
                           img alt="property" src="/assets/property.svg" /
@@ -67,7 +67,7 @@ section#main
                           p Conveyancing, Leases, & Property Development
                 .col-sm-12.col-md-offset-2.col-md-4.columns
                   article
-                    = link_to subservice_path(8), class: "block-link" do
+                    = link_to service_path(4), class: "block-link" do
                       .box-wrapper.clearfix
                         .box-image
                           img alt="business" src="/assets/business.svg" /
@@ -76,7 +76,7 @@ section#main
                           p Sales & Purchases, Business Disputes, Liquor Licensing, & Farm Sales
                 .col-sm-12.col-md-4.columns
                   article
-                    = link_to subservice_path(14), class: "block-link" do
+                    = link_to service_path(5), class: "block-link" do
                       .box-wrapper.clearfix
                         .box-image
                           img alt="will" src="/assets/will.svg" /
@@ -94,26 +94,26 @@ section#main
       .container
         .row
           .col-sm-12.columns
-            p.lead-text-medium.width-80pct-centered.text-center.margin-bottom-60px
-              | The most important thing is to be able to count on your representation interdum et ante
-              strong ipsum primis
-              | in faucibus orci varius natoque.
+            / p.lead-text-medium.width-80pct-centered.text-center.margin-bottom-60px
+            /   | The most important thing is to be able to count on your representation interdum et ante
+            /   strong ipsum primis
+            /   | in faucibus orci varius natoque.
             .picture-boxes.top-picture-box.round-image.image-small.centered-content.medium-col-space
               .row
                 .col-sm-6.columns
                   article
                     .box-image
-                      a href="#"
+                      = link_to our_story_path do
                         img.img-shadow alt="approach" src="/assets/image3.jpg" /
                     .box-text
                       h6.title.text-uppercase
-                        a href="our-story.html"  Our Story
+                        = link_to 'Our Story', our_story_path
                 .col-sm-6.columns
                   article
                     .box-image
-                      a href="#"
+                      = link_to our_people_path do
                         img.img-shadow alt="clients" src="/assets/image2.jpg" /
                     .box-text
                       h6.title.text-uppercase
-                        a href="our-people.html"  Our People
+                        = link_to 'Our People', our_people_path
     = render "/layouts/partials/branches_contact_info"
