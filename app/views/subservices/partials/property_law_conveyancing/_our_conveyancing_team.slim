@@ -21,15 +21,48 @@ section#main
             .small-bar.colored-bar
             ul.margin-bottom-60px
               li
-                = link_to "Get a conveyancing quotation for New South Wales.", subservice_path(3)
+                = link_to "Get a conveyancing quotation for New South Wales.", subservice_path(5)
               li
-                = link_to "Get a conveyancing quotation for Victoria.", subservice_path(5)
+                = link_to "Get a conveyancing quotation for Victoria.", subservice_path(6)
 
             p.margin-bottom-20px
               | Our experienced team at Gibney & Gunson is headed by the only Property Law Accredited Specialist in Albury/Wodonga.
               br
               br
-            img src="/assets/acc_specialist.png" /
+            img src="/assets/acc_specialist.png"
+    .stripe.stripe-transparent-bg
+      .stripe-upper-bg
+      .container
+        .row
+          .col-sm-12.columns
+            .staff.picture-boxes.left-picture-box.medium-col-space
+              article.clearfix
+                .box-image
+                  img src='/assets/team-placeholder.jpg' alt='team'
+                .box-text
+                  h3.title
+                    | Paul Gibney, &nbsp;
+                    span.text-medium.text-grey Solicitor
+                  .contact-details
+                    a(href='mailto:pgibney@gibneygunson.com.au') pgibney@gibneygunson.com.au
+                    br
+                    a(href='tel:0260496666') (02) 6049 6666
+                  .profile-description
+                    p
+                      | Paul has over 30 years’ experience as a solicitor, and is an
+                      a(href='https://www.lawsociety.com.au/for-the-public/going-court-and-working-with-lawyers/specialist-accreditation-scheme' target='_blank') strong Accredited Specialist
+                      |  in both property law and business law. He acts for individuals, businesses, and developers, and consults to lawyers and accountants. He is a co-author of the first New South Wales edition of 1001 Conveyancing Answers, which is a manual widely used by solicitors practising property law in New South Wales.
+              article.clearfix
+                .box-image
+                  img src='/assets/team-placeholder.jpg' alt='team'
+                .box-text
+                  h3.title Annie Moloney
+                  .contact-details
+                    a(href='mailto:amoloney@gibneygunson.com.au') amoloney@gibneygunson.com.au
+                    br
+                    a(href='tel:0260496666') (02) 6049 6666
+                  .profile-description
+                    p Annie has worked in the legal industry for many years, principally in the area of property law. She is the first point of contact for residential conveyancing, and assists Paul Gibney with business and commercial law, as well as wills and estate administration.
 
-    = render 'layouts/partials/paul_annie_contact_persons'
+
     = render 'layouts/partials/branches_contact_info'
