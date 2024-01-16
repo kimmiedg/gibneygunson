@@ -24,5 +24,6 @@ module V1
         @model.name
       end
     end
+
   end
 end

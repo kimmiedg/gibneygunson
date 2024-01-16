@@ -8,17 +8,13 @@ section#main
             .page-title-wrapper
               .page-title
                 h1 Our People
-  /! end Hero Image &amp; Page Title
-  /! Page Content
   #page-content.fullwidth-layout
-    /! Stripe section
     .stripe.stripe-box.stripe-white-bg
       .stripe-upper-bg
       .container
-        /! Container
         .row
           .col-sm-12.columns
-            /! Staff Member Profile
+            - user_profile = V1::UserProfilePresenter.new(@user_profile)
             .single-staff
               .row.staff-member-profile
                 .col-sm-8.columns.profile-header
@@ -26,7 +22,7 @@ section#main
                   p.subtitle = @user_profile.position == "Solicitor" ? "Partner" : @user_profile.position
                 .col-sm-4.columns.profile-image
                   figure
-                    img alt=("team member") src="/assets/team-placeholder.jpg" /
+                    img alt="team member" src="#{user_profile.img_src}"
                 .col-sm-6.columns.profile-info
                   .contact-details.margin-bottom-20px
                     .contact-email.clearfix
