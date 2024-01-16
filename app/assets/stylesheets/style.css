@@ -5395,9 +5395,9 @@ body {
 }
 .stat-data .fact-statement p {
 	font-size: 20px;
-	line-height: 1.3;
+	line-height: 1.4;
 	font-weight: 400;
-	margin-bottom: 0;
+	margin-bottom: 8px;
 }
 .stat-data.stat-2-cols .fact-statement p {
 	line-height: 1.5;
