@@ -13,7 +13,7 @@ section#main
   /! Page Content
   #page-content.fullwidth-layout
     /! Stripe section
-    .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
+    / .stripe.stripe-right.stripe-white-bg.stripe-arrows-bg
       .stripe-upper-bg
       .container
         /! Container
@@ -29,19 +29,18 @@ section#main
           .col-md-8.columns.page-intro
             p.lead-text-medium.text-primary-color Employees of Our Trusted Law Firm in Albury
             .small-bar.colored-bar
-            p
+            /p
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-      /! end Container
-    /! end Stripe section
-    /! Stripe section
     .stripe.stripe-fullwidth.remove-top
       .stripe-upper-bg
       .container
         /! Container
         .row
           .col-sm-12.columns
-            p.lead-text-medium.text-primary-color.text-center.margin-bottom-20px Our People
-            .small-bar.text-center.colored-bar
+            / p.lead-text-medium.text-primary-color.text-center.margin-bottom-20px Our People
+            /.small-bar.text-center.colored-bar
+            br
+            br
             .staff.picture-boxes.top-picture-box.round-image.centered-content.small-col-space
               .row
                 .col-sm-6.col-md-3.columns
@@ -94,8 +93,4 @@ section#main
                         a href="#" title=("view profile")  Annie Moloney
                       .sub
                         | Gibney's Assistant
-            /! end
-      /! end Container
-    /! end Stripe section
-    /! Stripe section
     = render 'layouts/partials/branches_contact_info'
